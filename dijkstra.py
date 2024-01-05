@@ -69,10 +69,7 @@ def closeness_centrality(graph, node):
     Returns:
     - Closeness centrality for the specified node
     """
-    distances = dijkstra(graph, node)
-    total_distance = sum(distances.values())  # Sum of all shortest path distances
-    num_reachable_nodes = len(distances) - 1  # Exclude the starting node
-
+    
     closeness_centrality = 0
 
     # Avoid division by zero
